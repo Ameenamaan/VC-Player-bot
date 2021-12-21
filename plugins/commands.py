@@ -129,12 +129,12 @@ async def start(client, message):
         return
     buttons = [
         [
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),
-            InlineKeyboardButton('🧩 Source', url='https://github.com/subinps/VCPlayerBot')
+            InlineKeyboardButton('⚙️ Channel', url='https://t.me/HDmoviePp'),
+            InlineKeyboardButton('🧩 𝚂𝙾𝚄𝚁𝙲𝙴', url='https://github.com/Ameenamaan/VC-Player-bot')
         ],
         [
-            InlineKeyboardButton('👨🏼‍🦯 Help', callback_data='help_main'),
-            InlineKeyboardButton('🗑 Close', callback_data='close'),
+            InlineKeyboardButton('👨🏼‍🦯 𝙷𝙴𝙻𝙿', callback_data='help_main'),
+            InlineKeyboardButton('🗑 𝙲𝙻𝙾𝚂𝙴', callback_data='close'),
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -148,19 +148,19 @@ async def show_help(client, message):
     reply_markup=InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("Play", callback_data='help_play'),
-                InlineKeyboardButton("Settings", callback_data=f"help_settings"),
-                InlineKeyboardButton("Recording", callback_data='help_record'),
+                InlineKeyboardButton("𝙿𝙻𝙰𝚈", callback_data='help_play'),
+                InlineKeyboardButton("𝚂𝙴𝚃𝚃𝙸𝙽𝙶𝚂", callback_data=f"help_settings"),
+                InlineKeyboardButton("𝚁𝙴𝙲𝙾𝚁𝙳𝙸𝙽𝙶", callback_data='help_record'),
             ],
             [
-                InlineKeyboardButton("Scheduling", callback_data="help_schedule"),
-                InlineKeyboardButton("Controling", callback_data='help_control'),
-                InlineKeyboardButton("Admins", callback_data="help_admin"),
+                InlineKeyboardButton("𝚂𝙲𝙷𝙴𝙳𝚄𝙻𝙸𝙽𝙶", callback_data="help_schedule"),
+                InlineKeyboardButton("𝙲𝙾𝙽𝚃𝚁𝙾𝙻𝙸𝙽𝙶", callback_data='help_control'),
+                InlineKeyboardButton("𝙰𝙳𝙼𝙸𝙽𝚂", callback_data="help_admin"),
             ],
             [
-                InlineKeyboardButton("Misc", callback_data='help_misc'),
-                InlineKeyboardButton("Config Vars", callback_data='help_env'),
-                InlineKeyboardButton("Close", callback_data="close"),
+                InlineKeyboardButton("𝙼𝙸𝚂𝙲", callback_data='help_misc'),
+                InlineKeyboardButton("𝙲𝙾𝙽𝙵𝙸𝙶 𝚅𝙰𝚁𝚂", callback_data='help_env'),
+                InlineKeyboardButton("𝙲𝙻𝙾𝚂𝙴", callback_data="close"),
             ],
         ]
         )
@@ -188,12 +188,12 @@ async def show_help(client, message):
 async def repo_(client, message):
     buttons = [
         [
-            InlineKeyboardButton('🧩 Repository', url='https://github.com/subinps/VCPlayerBot'),
-            InlineKeyboardButton('⚙️ Update Channel', url='https://t.me/subin_works'),     
+            InlineKeyboardButton('🧩 𝚂𝙾𝚄𝚁𝙲𝙴', url='https://github.com/Ameenamaan/VC-Player-bot'),
+            InlineKeyboardButton('⚙️ Channel', url='https://t.me/HDmoviePp'),     
         ],
         [
-            InlineKeyboardButton("🎞 How to Deploy", url='https://youtu.be/mnWgZMrNe_0'),
-            InlineKeyboardButton('🗑 Close', callback_data='close'),
+            InlineKeyboardButton("👨‍💻 𝙾𝚆𝙽𝙴𝚁", url='https://t.me/Ameen_Ameen_12'),
+            InlineKeyboardButton('🗑 𝙲𝙻𝙾𝚂𝙴', callback_data='close'),
         ]
     ]
     await message.reply("<b>The source code of this bot is public and can be found at <a href=https://github.com/subinps/VCPlayerBot>VCPlayerBot.</a>\nYou can deploy your own bot and use in your group.\n\nFeel free to star☀️ the repo if you liked it 🙃.</b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
